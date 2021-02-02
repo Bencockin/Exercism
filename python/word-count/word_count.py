@@ -1,2 +1,11 @@
 def count_words(sentence):
-    pass
+
+	d = {}
+
+	sen = sentence.lower()
+
+	for word in sen.split():
+	    
+		d[word] = sen.count(word)
+
+	return d
