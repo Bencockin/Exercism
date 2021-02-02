@@ -6,6 +6,6 @@ def count_words(sentence):
 
 	for word in sen.split():
 	    
-		d[word] = sen.count(word)
+		d[word] = sen.count(""" + word + """)
 
 	return d
