@@ -52,12 +52,12 @@ class GradeSchoolTest(unittest.TestCase):
         school.add_student(name="Bradley", grade=5)
         school.add_student(name="Jeff", grade=1)
         expected = ["Bradley", "Franklin"]
-        self.assertEqual(school.grade(5), expected)
+        self.assertEqual(school.grade_(5), expected)
 
     def test_grade_returns_an_empty_list_if_there_are_no_students_in_that_grade(self):
         school = School()
         expected = []
-        self.assertEqual(school.grade(1), expected)
+        self.assertEqual(school.grade_(1), expected)
 
 
 if __name__ == "__main__":
